@@ -65,7 +65,7 @@ switch ($bot) {
 		$objControlProductos= new ControlProductos($objProductos);
 		$resultado = $objControlProductos->consultar();
 			if ($resultado->num_rows > 0) {
-				echo "<table class='table table-bordered table-dark'><tr><th>SKU</th><th>NOMBRE</th><th>DESCRIPCION</th><th>FK TIENDA</th><th>VALOR</th><th>IMAGEN</th></tr>";
+				echo "<table class='table table-bordered table-dark'><tr><th>ID</th><th>NOMBRE</th><th>REFERENCIA</th><th>PRECIO</th><th>PESO</th><th>CATEGORÍA</th><th>STOCK</th><th>FECHA CREACIÓN</th></tr>";
 				while($fila = $resultado->fetch_assoc()) {
 				  echo "<tr><td>".$fila["ID"]."</td><td>".$fila["Nombre"]."</td><td>".$fila["Referencia"]."</td><td>".$fila["Precio"]."</td><td>".$fila["Peso"]."</td><td>".$fila["Categoria"]."</td><td>".$fila["Stock"]."</td><td>".$fila["Fecha_creacion"]."</td></tr>";
 				}
@@ -148,7 +148,7 @@ switch ($bot) {
 		$objControlProductos= new ControlProductos($objProductos);
 		$resultado = $objControlProductos->Listar();
 			if ($resultado->num_rows > 0) {
-				echo "<table class='table table-bordered table-dark'><tr><th>SKU</th><th>NOMBRE</th><th>DESCRIPCION</th><th>FK TIENDA</th><th>VALOR</th><th>IMAGEN</th></tr>";
+				echo "<table class='table table-bordered table-dark'><tr><th>ID</th><th>NOMBRE</th><th>REFERENCIA</th><th>PRECIO</th><th>PESO</th><th>CATEGORÍA</th><th>STOCK</th><th>FECHA CREACIÓN</th></tr>";
 				while($fila = $resultado->fetch_assoc()) {
 					echo "<tr><td>".$fila["ID"]."</td><td>".$fila["Nombre"]."</td><td>".$fila["Referencia"]."</td><td>".$fila["Precio"]."</td><td>".$fila["Peso"]."</td><td>".$fila["Categoria"]."</td><td>".$fila["Stock"]."</td><td>".$fila["Fecha_creacion"]."</td></tr>";
 				}

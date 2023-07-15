@@ -149,7 +149,7 @@ $db->cerrarBd();
 							<tr>
 							<td><label for="Stock">Stock:</label></td>
 							<div>
-								<td> <input class="btn_empl input" type="text" name="Stock" placeholder="Stock" id="Stock" title="Ingrese la cantidad en Stock" autocomplete="off"required></td>
+								<td> <input class="btn_empl input" type="number" name="Stock" placeholder="Stock" id="Stock" title="Ingrese la cantidad en Stock" autocomplete="off"required></td>
 							</div><!-- end row -->
 	                        </tr>
 							<tr>
