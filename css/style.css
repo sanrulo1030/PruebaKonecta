@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    /*background-color: #581845;*/
+    background-color: #18171c; /*18171c  ADD8E6*/
+}
+/*Menu principal*/
+.header--nav {
+    width: 100%;
+}
+.header--nav__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2.2rem;
+    list-style: none;
+}
+.sub_menu {
+    font-size: 2rem;
+    /* padding: 1rem 2.5rem 1rem 1rem; */
+    padding: 1.9rem;
+    color: #90EE90;
+    border: 1px solid transparent; 
+}
+.sub_menu i,
+.sub_menu a {
+    color: #90EE90; 
+    text-decoration: none;
+}
+.sub_menu:hover {
+    border: 1px solid #90EE90; 
+}
+.sub_menu:focus {
+    border: 1px solid #90EE90; 
+}
+/*HOME*/
+div.home
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #90EE90; 
+    padding: 3rem;
+}
+h1.title-home,
+h2.sub-title-home {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.8rem;
+    margin: 1.2rem;
+    color: #90EE90;
+    font-weight: 900;
+}
+h2.sub-title-home {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+p.p {
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7rem;
+    color: #90EE90;
+    line-height: 2.5rem;
+    margin: 4rem 1.5rem 1.5rem 1.5rem;
+}
+/*Login*/
+.form--login {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 2rem auto;
+    padding: 6rem;
+    border: 1px solid #90EE90;
+    border-radius: 10%;
+}
+.input {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    padding: 5px 20px;
+    outline: none;
+    height: 5rem;
+    color: #90EE90;
+    border-bottom: 1px solid #90EE90;
+}
+.input::placeholder {
+    color: #90EE90;
+}
+.btn-enviar {
+    background-color: rgba(144,238,144, 0.1);
+    border: 1px solid rgba(144,238,144, 0.1);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height: 3.5rem;
+    letter-spacing: 2px;
+    color: #90EE90;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 1.6rem;
+}
+/*Menus internos*/
+.padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6rem 0;
+    align-content: space-around;
+}
+.botones {
+    background-color: rgba(144,238,144, 0.1);
+    border: 1px solid rgba(144,238,144, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #90EE90;
+    margin: 0rem 1rem 1.8rem 1rem;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    outline: none;
+}
+a.botones {
+    text-decoration: none;
+}
+.botones:hover,
+a.botones:hover {
+    background-color: rgba(144,238,144, 0.9);
+    color: #000;
+    border-radius: 0px;
+}
+div.hijo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+div.hijo-p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.noinput {
+    background-color: rgba(144,238,144, 0.1);
+    border: 1px solid rgba(144,238,144, 0.1);
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height: 4rem;
+    letter-spacing: 2px;
+    color: #90EE90;
+    margin-right: 2rem;
+    outline: none;
+    font-size: 1.6rem;
+}
+.noinput option { 
+    color:#000; 
+    background-color:transparent; 
+}
+.fecha {
+    background-color: rgba(144,238,144, 0.1);
+    border: 1px solid rgba(144,238,144, 0.1);
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #90EE90;
+    outline: none;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.textarea {
+    resize: none;
+    text-align: center;
+    background-color: rgba(144,238,144, 0.1);
+    border: 1px solid rgba(144,238,144, 0.1);
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #90EE90;
+    outline: none;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 7.5rem;
+    margin: 2rem 0;
+}
+.textarea::placeholder {
+    /* color: #4b6e96;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px; */
+    color: #90EE90;
+}
+/*Tabla*/
+.table_re {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+table.tabla_empleados {
+    text-align: center;
+    border-collapse: collapse;
+    /* border: 1px solid #90EE90; */
+}
+table.tabla_empleados tr th,
+table.tabla_empleados tr td {
+    padding: 0.4rem;
+    
+}
+table.tabla_empleados thead {
+    background-color: #90EE90;
+    /* transform: skewX(-3deg); */
+    /* transform: rotate(1deg); */
+}
+table.tabla_empleados thead tr th {
+    font-size: 1.5rem;
+}
+table.tabla_empleados tr td {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    color: #90EE90;
+}
+table.tabla_empleados tr td a {
+    color: #90EE90;
+}
+table.tabla_empleados tr {
+    border: 1px solid #90EE90;
+    border-top: 0px;
+}
+/*Inputs Files*/
+.file-select {
+    position: relative;
+    display: inline-block;
+}
+.file-select::before {
+  background-color: #90EE90;
+  color: #000;
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Imagen Usuario'; /* texto por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;    
+}
+.file-select input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+    cursor: pointer;      
+  }
+  /*Inputs Files*/
+.file-pdf {
+    position: relative;
+    display: inline-block;
+}
+.file-pdf::before {
+  background-color: #90EE90;
+  color: #000;
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Hoja de vida'; /* texto por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;    
+}
+.file-pdf input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+    cursor: pointer;      
+  }
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    color: #90EE90;
+}
+header.header input[type="checkbox"], 
+header.header .fa-bars,
+header.header .fa-times {
+    display: none;
+}
+div.home--form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+/*Celulares*/
+/**Media Query*/
+@media (max-width: 500px) {
+    div.home
+    {
+        padding: 2.2rem;
+        border: 0px;
+        /* width: 80%; */
+    }
+    .header--nav {
+        width: 100%;
+    }
+    .header--nav__ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Menu hamburguesa*/
+    header.header input[type="checkbox"], 
+    header.header .fa-bars,
+    header.header .fa-times {
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        right: 0px;
+        top: 0px;
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    header.header .fa-bars,
+    header.header .fa-times {
+        pointer-events: none;
+        font-size: 4.8rem;
+        color: #90EE90;
+    }
+    header.header input[type="checkbox"] {
+        opacity: 0;
+    }
+    header.header nav {
+        display: none;
+    }
+    header.header input:checked ~ nav {
+        display: block;
+    }
+    header.header input:checked ~ .fa-bars {
+    display: none;
+    }
+    header.header input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    /*Formularios*/
+    .noinput {
+        margin-bottom: 2rem;
+    }
+    .file-select {
+        margin-bottom: 2rem;
+    }
+    table.tabla_empleados {
+        display: block;
+        overflow-x: auto;
+        /* text-align: center;
+        border-collapse: collapse; */
+        /* border: 1px solid #90EE90; */
+    }
+    body.body,
+    div.home {
+        overflow-x: hidden;
+    }
+    /*Login*/
+    .form--login {
+        /* display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin: 2rem auto;
+        padding: 6rem;
+        border: 1px solid #90EE90;
+        border-radius: 10%; */
+        width: 80%;
+        padding: 4.9rem;
+    }
+}
