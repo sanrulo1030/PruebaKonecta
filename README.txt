@@ -49,3 +49,6 @@ OBSERVACIONES:
 EN LA CARPETA BD ESTÁN LOS ARCHIVOS:
 copia de
 la base de datos y las sentencias de las 2 consultas solicitadas.
+
+PARA VENDER:
+Es necesario agregar la cantidad y luego darle click sobre el icono de bolsa o compra
