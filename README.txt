@@ -43,3 +43,9 @@ Para importar una base de datos a phpMyAdmin, puedes seguir estos pasos:
 6. **Iniciar la importación**: Después de seleccionar el archivo y configurar las opciones, haz clic en el botón "Continuar" o "Importar" para iniciar el proceso de importación. phpMyAdmin comenzará a leer y ejecutar el archivo de la base de datos.
 
 7. **Esperar y verificar el resultado**: El tiempo que llevará la importación dependerá del tamaño del archivo y de la cantidad de datos que contenga. Una vez completada la importación, recibirás una notificación o un mensaje indicando si la importación fue exitosa. Verifica que los datos se hayan importado correctamente revisando las tablas y registros en la base de datos seleccionada.
+
+
+OBSERVACIONES:
+EN LA CARPETA BD ESTÁN LOS ARCHIVOS:
+copia de
+la base de datos y las sentencias de las 2 consultas solicitadas.
